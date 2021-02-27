@@ -18,6 +18,8 @@
   <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
   <link href="assets/css/fonts/pe-icon-7-stroke.css" rel="stylesheet">
   <script src="https://kit.fontawesome.com/51389e4e28.js" crossorigin="anonymous"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
 </head>
 
 <body>
@@ -484,6 +486,24 @@
     </div>
   </footer>
 
+  <script type="text/javascript">
+
+  $(document).ready(function () {
+      $(".arrow-right").bind("click", function (event) {
+          event.preventDefault();
+          $(".vid-list-container").stop().animate({
+              scrollLeft: "+=336"
+          }, 750);
+      });
+      $(".arrow-left").bind("click", function (event) {
+          event.preventDefault();
+          $(".vid-list-container").stop().animate({
+              scrollLeft: "-=336"
+          }, 750);
+      });
+  });
+  </script>
+
 </body>
 
 <!--   core js files    -->
@@ -498,5 +518,8 @@
 
 <!--   file where we handle all the script from the Gaia - Bootstrap Template   -->
 <script type="text/javascript" src="assets/js/gaia.js"></script>
+
+<!-- Resources  -->
+<!-- <script type="text/javascript src=" assetss/js/resources.js"> </script> -->
 
 </html>
