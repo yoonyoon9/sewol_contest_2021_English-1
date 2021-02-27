@@ -11,6 +11,10 @@ body {
   font-size: 100%;
 }
 
+/* Judging panel bg-color */
+.bg-color {
+}
+
 .logo-image {
   width: 110px;
   height: 100x;
